@@ -1,7 +1,7 @@
 import React from "react"
-
 import ReactDOM from "react-dom"
+import App from "./App"
+import "./styles.css"
+import "./media/fondo.jpg"
 
-const Elemento = () => <p>Hola Mundo jojo</p>
-
-ReactDOM.render( <Elemento/> , document.getElementById("root"))
+ReactDOM.render( <App/> , document.getElementById("root"))
