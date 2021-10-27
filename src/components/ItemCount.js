@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function ItemCount({stock, initial}){
-    const [cantidad, setCantidad] = useState(1)
+    const [cantidad, setCantidad] = useState(initial)
 
     const aumentarCantidad = () => {
         if (cantidad < stock){
