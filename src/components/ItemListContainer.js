@@ -1,8 +1,8 @@
-const ItemLIstContainer = (props) => {
+const ItemLIstContainer = () => {
 
     return(
         <h1>
-            {props.greetings} a nuestro espacio.
+            Bienvenido a nuestro espacio.
         </h1>
     )
 }
