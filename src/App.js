@@ -1,14 +1,13 @@
-import ItemCount from "./components/ItemCount"
+
+import Productos from "./components/Productos"
 import Footer from "./components/Footer"
-import ItemLIstContainer from "./components/ItemListContainer"
 import NavBar from "./components/NavBar"
 
 const App = () => {
     return(
         <>
         <NavBar/>
-        <ItemLIstContainer/>
-        <ItemCount stock={18} initial={8} />
+        <Productos/>
         <Footer/>
         </>
     )

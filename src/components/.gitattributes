@@ -1,0 +1,45 @@
+[
+    {
+        "id" : 0 ,
+        "title" : "SANSEVIERIA",
+        "description" : "agregar descripcion",
+        "price" : 750,
+        "img" : ""
+    },
+    {
+        "id" : 1 ,
+        "title" : "DRACAENA MASSAGEANA",
+        "description" :"agregar descripcion",
+        "price" : 700,
+        "img" : ""
+    },
+    {
+        "id" : 2 ,
+        "title" : "FICUS BENJAMINA",
+        "description" : "agregar descripcion",
+        "price" : 800,
+        "img" : ""
+    },
+    {
+        "id" : 3 ,
+        "title" : "MONSTERA DELICIOSA",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : ""
+    },
+    {
+        "id" : 4 ,
+        "title" : "ASPIDISTRA",
+        "description" : "agregar descripcion",
+        "price" : 1100,
+        "img" : ""
+    },
+    {
+        "id" : 5 ,
+        "title" : "CHAMADOREA ELEGANS",
+        "description" : "agregar descripcion",
+        "price" : 890,
+        "img" : ""
+    }
+
+]

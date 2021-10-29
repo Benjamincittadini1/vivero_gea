@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
 body{
     background-image: url(./media/fondo.jpg);
+	color: white;
 }
  .thx {
 	 position: fixed;
