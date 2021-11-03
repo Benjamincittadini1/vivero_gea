@@ -3,27 +3,26 @@ import ItemDetail from "./ItemDetail"
 import productsMain_Json from "./productsMain.json"
 
 
-const ItemDetailContainer = ({contador}) => {
+const ItemDetailContainer = () => {
     const [productos, setProductos] = useState([])
+
     useEffect(() => {
-            promesa
-                .then((data_json)=>{
-                    setTimeout(()=>{
-                        setProductos(data_json)
-                    },2000)
-                })
-                .catch(()=>{
-                    console.log("Error")
-                    
-                })
-    },[])
-    const promesa= new Promise((resolve, reject) => {
-        resolve(productsMain_Json)
-        reject("error")
-    })
+        const getItem = () => {
+          return new Promise((resolve, reject) => {
+            setTimeout(() => {
+              resolve(productsMain_Json)
+            }, 2000)
+          })
+        }
+        getItem()
+          .then((data_json) => {
+            setProductos(data_json)
+          })
+      },[])
+
     return(
         <div>
-            {productos.length===0?<p></p>:<ItemDetail items={productos}/>}
+            <ItemDetail items={productos}/>
         </div>
     )}
 
