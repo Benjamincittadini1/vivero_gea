@@ -1,10 +1,14 @@
+import ItemDetailContainer from "./ItemDetailContainer"
 import ItemListContainer from "./ItemListContainer"
+
 const Productos = () => {
     return (
+        <>
         <main className="comp-main">
-            <ItemListContainer contador={0}/>
+            <ItemDetailContainer/>
+            <ItemListContainer/>
         </main>
-            
+        </>   
     )
 }
 

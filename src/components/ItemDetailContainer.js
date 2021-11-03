@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
-import ItemList from "./ItemList"
-import products_Json from "./products.json"
+import ItemDetail from "./ItemDetail"
+import productsMain_Json from "./productsMain.json"
 
-const ItemListContainer = ({contador}) => {
+
+const ItemDetailContainer = ({contador}) => {
     const [productos, setProductos] = useState([])
     useEffect(() => {
             promesa
@@ -17,15 +18,13 @@ const ItemListContainer = ({contador}) => {
                 })
     },[])
     const promesa= new Promise((resolve, reject) => {
-        resolve(products_Json)
+        resolve(productsMain_Json)
         reject("error")
     })
-
-    return (
+    return(
         <div>
-            {productos.length===0?<p>Cargando...</p>:<ItemList items={productos}/>}
+            {productos.length===0?<p></p>:<ItemDetail items={productos}/>}
         </div>
-    )
-}
+    )}
 
-export default ItemListContainer
+export default ItemDetailContainer

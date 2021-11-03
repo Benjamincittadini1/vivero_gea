@@ -3,48 +3,48 @@ import Menu from "./Menu"
 const Footer = () => {
     return(
         
-<footer class="footer-distributed">
-			<div class="footer-left">
+<footer className="footer-distributed">
+			<div className="footer-left">
 				<h3>Vivero<span>GEA</span></h3>
-				<p class="footer-links">
+				<p className="footer-links">
 					<Menu/>
 				</p>
 
-				<p class="footer-company-name">Vivero GEA © 2021</p>
+				<p className="footer-company-name">Vivero GEA © 2021</p>
 			</div>
 
-			<div class="footer-center">
+			<div className="footer-center">
 
 				<div>
-					<i class="fa fa-map-marker"></i>
+					<i className="fa fa-map-marker"></i>
 					<p><span>Corrientes 987</span> CABA</p>
 				</div>
 
 				<div>
-					<i class="fa fa-phone"></i>
+					<i className="fa fa-phone"></i>
 					<p>+54 11 5555-5556</p>
 				</div>
 
 				<div>
-					<i class="fa fa-envelope"></i>
+					<i className="fa fa-envelope"></i>
 					<p><a href="mailto:support@company.com">support@viveroGEA.com</a></p>
 				</div>
 
 			</div>
 
-			<div class="footer-right">
+			<div className="footer-right">
 
-				<p class="footer-company-about">
+				<p className="footer-company-about">
 					<span>Sobre Nosotros</span>
                     Vivero Gea es un emprendimiento sustentable, queremos ponerle vida a tu dia a dia y llenar de plantas el mundo.
 				</p>
 
-				<div class="footer-icons">
+				<div className="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><i className="fa fa-facebook"></i></a>
+					<a href="#"><i className="fa fa-twitter"></i></a>
+					<a href="#"><i className="fa fa-linkedin"></i></a>
+					<a href="#"><i className="fa fa-github"></i></a>
 
 				</div>
 

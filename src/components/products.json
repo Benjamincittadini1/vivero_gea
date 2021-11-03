@@ -18,7 +18,7 @@
         "title" : "FICUS",
         "description" : "agregar descripcion",
         "price" : 1500,
-        "img" : "../MEDIA/ficus.jpg"
+        "img" : "../MEDIA/FICUS.jpg"
     },
     {
         "id" : 3 ,
@@ -36,7 +36,70 @@
     },
     {
         "id" : 5 ,
-        "title" : "MONSTERA DELICIOSA",
+        "title" : "POTHUS LEMON",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 6 ,
+        "title" : "FITTONIA",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 7 ,
+        "title" : "SPATHYFILLIUM",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 8 ,
+        "title" : "FICUS PANDURATA",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 9 ,
+        "title" : "ESTRELLA FEDERAL",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 10 ,
+        "title" : "PEPEROMIA",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 11 ,
+        "title" : "ORQUÍDEA",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 12 ,
+        "title" : "HELECHO CULANDRILLO",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 13 ,
+        "title" : "HYPOESTES",
+        "description" : "agregar descripcion",
+        "price" : 2200,
+        "img" : "../MEDIA/monstera-deliciosa.jpg"
+    },
+    {
+        "id" : 14 ,
+        "title" : "PHILODENDRON",
         "description" : "agregar descripcion",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
