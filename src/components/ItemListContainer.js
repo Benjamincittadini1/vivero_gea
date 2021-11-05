@@ -1,31 +1,60 @@
-import { useEffect, useState } from "react"
 import ItemList from "./ItemList"
-import products_Json from "./products.json"
+import products from "./products.json"
+import {useState, useEffect} from 'react'
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({contador}) => {
-    const [productos, setProductos] = useState([])
-    useEffect(() => {
-            promesa
-                .then((data_json)=>{
-                    setTimeout(()=>{
-                        setProductos(data_json)
-                    },2000)
-                })
-                .catch(()=>{
-                    console.log("Error")
-                    
-                })
-    },[])
-    const promesa= new Promise((resolve, reject) => {
-        resolve(products_Json)
-        reject("error")
-    })
+// Galería de Libros
+
+const ItemListContainer = ({}) => {
+
+    const[prods,setProds]=useState([])
+
+// Filtro los productos
+
+    const {prodDescription} = useParams();
+
+     useEffect(() => {
+
+        let promesa 
+        
+         if(prodDescription){
+             console.log("Acá hago el pedido de productos filtrando por categoría", prodDescription);
+
+            promesa = new Promise((resolve,reject)=>{
+                 setTimeout(()=>{
+                     resolve(products.filter(products => products.description === prodDescription))
+                 },2000)
+             })
+
+         }else{
+             console.log("Acá hago el pedido de productos sin filtrar");
+
+             promesa = new Promise((resolve,reject)=>{
+                 setTimeout(()=>{
+                     resolve(products)
+                 },2000)
+             })
+         }
+         
+            promesa.then(resolve => {
+            
+                setProds(resolve)
+            })
+     }, [prodDescription])  
 
     return (
+            
+        <>
+
         <div>
-            {productos.length===0?<p>Cargando...</p>:<ItemList items={productos}/>}
+            {prods.length===0?<p>Cargando...</p>:<ItemList items={prods}/>}
         </div>
+
+        
+        
+        </>
     )
 }
 
-export default ItemListContainer
+    
+export default ItemListContainer;

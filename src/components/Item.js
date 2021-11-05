@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Item = ({ item }) => {
     return (
@@ -14,7 +15,9 @@ const Item = ({ item }) => {
                         <h3 className="card__title">{item.description}</h3>
                         <span className="card__by">${item.price}</span>
                         <br/>
-                        <button className="button-buy">Agregar al carrito</button>
+                        <Link to={`/${item.id}`}>
+                        <button className="button-buy">Detalles</button>
+                        </Link>
                     </div>
                 </article>
                 </div>

@@ -2,105 +2,105 @@
     {
         "id" : 0 ,
         "title" : "SANSEVIERIA",
-        "description" : "agregar descripcion",
+        "description" : "interior",
         "price" : 850,
         "img" : "../MEDIA/sansevieria.jpg"
     },
     {
         "id" : 1 ,
         "title" : "POTHUS",
-        "description" :"agregar descripcion",
+        "description" :"interior",
         "price" : 950,
         "img" : "../MEDIA/pothus.jpg"
     },
     {
         "id" : 2 ,
         "title" : "FICUS",
-        "description" : "agregar descripcion",
+        "description" : "interior",
         "price" : 1500,
         "img" : "../MEDIA/FICUS.jpg"
     },
     {
         "id" : 3 ,
         "title" : "HIEDRA MINI",
-        "description" : "agregar descripcion",
+        "description" : "interior",
         "price" : 999,
         "img" : "../MEDIA/hiedramini.jpg"
     },
     {
         "id" : 4 ,
         "title" : "ASPIDISTRA",
-        "description" : "agregar descripcion",
+        "description" : "interior",
         "price" : 1100,
         "img" : "../MEDIA/aspidastra.jpg"
     },
     {
         "id" : 5 ,
         "title" : "POTHUS LEMON",
-        "description" : "agregar descripcion",
+        "description" : "interior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 6 ,
         "title" : "FITTONIA",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 7 ,
         "title" : "SPATHYFILLIUM",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 8 ,
         "title" : "FICUS PANDURATA",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 9 ,
         "title" : "ESTRELLA FEDERAL",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 10 ,
         "title" : "PEPEROMIA",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 11 ,
         "title" : "ORQUÍDEA",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 12 ,
         "title" : "HELECHO CULANDRILLO",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 13 ,
         "title" : "HYPOESTES",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     },
     {
         "id" : 14 ,
         "title" : "PHILODENDRON",
-        "description" : "agregar descripcion",
+        "description" : "exterior",
         "price" : 2200,
         "img" : "../MEDIA/monstera-deliciosa.jpg"
     }

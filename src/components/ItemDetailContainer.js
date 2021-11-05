@@ -1,29 +1,45 @@
-import { useEffect, useState } from "react"
-import ItemDetail from "./ItemDetail"
-import productsMain_Json from "./productsMain.json"
-
+import ItemDetail from "./ItemDetail";
+import products from "./products.json";
+import {useState, useEffect} from 'react';
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-    const [productos, setProductos] = useState([])
+    
+    const [producto,setProducto]=useState([])
+    const {id} = useParams();
 
-    useEffect(() => {
-        const getItem = () => {
-          return new Promise((resolve, reject) => {
-            setTimeout(() => {
-              resolve(productsMain_Json)
-            }, 2000)
-          })
-        }
-        getItem()
-          .then((data_json) => {
-            setProductos(data_json)
-          })
-      },[])
+    const results = products.filter(product => product.id == id);
 
-    return(
-        <div>
-            <ItemDetail items={productos}/>
-        </div>
-    )}
+    const getItem = () => {
+        return new Promise((resolve,reject) => {
+            setTimeout(()=>{
+                resolve(results)
+            },2000);
+        });
+    }
 
-export default ItemDetailContainer
+
+        useEffect(()=>{
+            getItem().then(setProducto)
+        }, []);
+
+    // console.log(saga);
+
+    return (
+        <section className={`div${producto.id}`}>
+            <h2>Especie</h2>
+            <div className="productCatalog">
+                {producto.map(producto => 
+                        <ItemDetail 
+                        key={producto.id}
+                        image={producto.img}
+                        title={producto.title}
+                        price={producto.price}
+                        description={producto.description}
+                        />)}
+            </div>
+        </section>
+    )
+}
+
+export default ItemDetailContainer;
