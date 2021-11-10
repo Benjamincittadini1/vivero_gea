@@ -1,11 +1,15 @@
 import {GrCart} from "react-icons/gr"
+import { NavLink } from "react-router-dom";
 
-const CartWidget = () => {
+
+const ShoppingCart = () => {
     return(
-        <div>
-          <GrCart color="white" size="30px"/>
-        </div>
+        <NavLink to={`/cart`}>
+          <div>
+            <GrCart color="white" size="30px"/>
+          </div>
+        </NavLink>
     )
 }
 
-export default CartWidget
+export default ShoppingCart;

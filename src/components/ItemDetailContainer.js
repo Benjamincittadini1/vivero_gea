@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
         return new Promise((resolve,reject) => {
             setTimeout(()=>{
                 resolve(results)
-            },2000);
+            },1000  );
         });
     }
 
@@ -27,12 +27,11 @@ const ItemDetailContainer = () => {
 
     return (
         <section className={`div${producto.id}`}>
-            <h2>Especie</h2>
             <div className="productCatalog">
                 {producto.map(producto => 
                         <ItemDetail 
                         key={producto.id}
-                        image={producto.img}
+                        img={producto.img}
                         title={producto.title}
                         price={producto.price}
                         description={producto.description}

@@ -13,7 +13,7 @@ const AppBooks = () => {
             <NavBar/>
             {/* <ItemDetailContainer/> */}
             <Route exact path="/" exact component={ItemListContainer}/>
-            <Route exact path="/description/:descriptionId" component={ItemListContainer}/>
+            <Route exact path="/description/:prodDescription" component={ItemListContainer}/>
             <Route exact path="/:id" component={ItemDetailContainer}/>
             <Footer/>
         </BrowserRouter>

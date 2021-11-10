@@ -22,8 +22,8 @@ const ItemListContainer = ({}) => {
 
             promesa = new Promise((resolve,reject)=>{
                  setTimeout(()=>{
-                     resolve(products.filter(products => products.description === prodDescription))
-                 },2000)
+                     resolve(products.filter(productos => productos.description === prodDescription))
+                 },1000)
              })
 
          }else{
@@ -32,7 +32,7 @@ const ItemListContainer = ({}) => {
              promesa = new Promise((resolve,reject)=>{
                  setTimeout(()=>{
                      resolve(products)
-                 },2000)
+                 },1000)
              })
          }
          
