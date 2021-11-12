@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
 const ItemCount = ({stock, initial, onAdd}) => {
 
     const [state, setState] = useState(initial);
