@@ -21,6 +21,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
         } else {
             alert(`Debe elegir al menos 1`)
             setState(state)
+
         }
     }
 

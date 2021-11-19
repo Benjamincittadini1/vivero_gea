@@ -24,9 +24,9 @@ const ItemDetail = ({plants}) => {
            <h3 className="card__category">{plants.title}</h3>
            <h5 className="card__title">{plants.price}</h5>
            <p className="card__by">{plants.description}</p>
-           <ItemCount stock={7} initial={0} onAdd={getDataCounter}/>
+           <ItemCount stock={7} initial={1} onAdd={getDataCounter}/>
            <NavLink to={`/Cart`}>
-                {show ? <button className="finishShop">Finalizar compra</button> : null}
+                {show ? <button className="button-buy">Finalizar compra</button> : null}
             </NavLink>
            </div>
            </section>

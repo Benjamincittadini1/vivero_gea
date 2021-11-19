@@ -2,6 +2,7 @@ import ItemDetail from "./ItemDetail";
 import products from "./products.json";
 import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
+import { firestore } from "./firebase";
 
 const ItemDetailContainer = () => {
     
@@ -20,26 +21,27 @@ const ItemDetailContainer = () => {
 
 
         useEffect(()=>{
-            getItem().then(setProducto)
-        }, []);
+            const db = firestore
+            const collection = db.collection("products")
+            const query = collection.doc(id)
+            const promesa = query.get()
 
-    // console.log(saga);
-    if (producto.length === 0) {
-        return (
-          <div className="loading">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Loader.gif" alt="Cargando"  width="100px"/>
-          </div>
-        );
-      } else {
+            promesa
+                .then((documento)=>{
+                    console.log("consulta exitosa")
+                    const data = documento.data()
+                    setProducto(data)
+                })
+        }, [id]);
+
+
     return (
         <section className={`div${producto.id}`}>
             <div className="productCatalog">
-                {producto.map(producto => 
-                         <ItemDetail key={producto.id} plants={producto} />)}
+                <ItemDetail key={producto.id} plants={producto} />
             </div>
         </section>
         )
     }
-}
 
 export default ItemDetailContainer;
